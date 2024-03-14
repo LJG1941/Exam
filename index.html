@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Code Crunch</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<img src=""
+<img src="https://t4.ftcdn.net/jpg/02/89/64/69/360_F_289646929_mvmudLRuRSTKw38sbfANSoZcQwByTlV6.jpg">
+
+
+    <div id="app">
+
+        <div id="ordersSection">
+            <h1>Orders</h1>
+            <div id="orders">
+    
+
+                <div class="order">
+                    <img src="https://img.freepik.com/premium-vector/cute-burger-image-cheeseburger-appetizing-hamburger-flat-style_118339-5444.jpg?size=338&ext=jpg&ga=GA1.1.735520172.1710374400&semt=ais" alt="burger">
+                </div>
+
+            </div>
+        </div>
+        <div id="orderCreation">
+            <h1>Menu</h1>
+            <div id="foodoptions">
+                <div class="foodoption">
+                    <img src="https://img.freepik.com/premium-vector/cute-burger-image-cheeseburger-appetizing-hamburger-flat-style_118339-5444.jpg?size=338&ext=jpg&ga=GA1.1.735520172.1710374400&semt=ais" alt="burger">
+                    <h2>Burgers</h2>
+                    <button 
+                        onclick='
+                        
+
+                        let orders = document.getElementById("orders");
+                        
+                        let newOrder = `<div class="order">
+                                       <img src="https://t4.ftcdn.net/jpg/05/81/42/55/360_F_581425504_CAYlDq3s7dsWsO0cxRF39WN2gyKtcs9d.jpg" alt="burger">
+                                       <button onclick="
+                                       var elementThisEventWasTriggeredOn = event.target;
+                                       var parentElement = elementThisEventWasTriggeredOn.parentElement;
+                                       parentElement.remove();
+                                       ">Ready</button>
+                                       </div>`;
+
+                                       orders.innerHTML += newOrder;
+                                       '>Create Order</button>
+                </div>
+                <div class="foodoption">
+                    <img src="https://static.abeka.com/Shared/ABeka/ProductImages/ClipArt/258059/150x150y160fx160fh-w/258059-Medium-Drink-Cup-polka-dot-color-png.png" alt="Drink">
+                    <h2>Drink</h2>
+                    <button
+                        onclick='
+                        
+
+                        let orders = document.getElementById("orders");
+                        
+                        let newOrder = `<div class="order">
+                                       <img src="https://static.abeka.com/Shared/ABeka/ProductImages/ClipArt/258059/150x150y160fx160fh-w/258059-Medium-Drink-Cup-polka-dot-color-png.png" alt="drink">
+                                       <button onclick="">Ready</button>
+                                       </div>`
+                                       
+                                       orders.innerHTML += newOrder;
+                                       '>Create Order</button>
+               
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
